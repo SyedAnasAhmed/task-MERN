@@ -10,8 +10,8 @@ const ProductSchema = mongoose.Schema(
             type: Number,
             require: true,
         },
-        publishYear:{
-            type: String,
+        stock:{
+            type: Number,
             require: true,
         },
     },
@@ -20,3 +20,5 @@ const ProductSchema = mongoose.Schema(
     
     }
 )
+
+export const Products = mongoose.model("Products" , ProductSchema)
