@@ -1,6 +1,7 @@
 import "./App.css";
 import { HeroCarousel } from "./Components/Carousel";
 import Header from "./Components/Header";
+import Hero2 from "./Components/Hero2Section";
 import Navbar from "./Components/Navbar";
 import SmallCarousel from "./Components/SmallCarousel";
 
@@ -19,6 +20,7 @@ function App() {
         </div>
       </div>
       <SmallCarousel />
+      <Hero2/>
     </>
   );
 }

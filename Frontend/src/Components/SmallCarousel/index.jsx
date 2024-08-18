@@ -2,25 +2,29 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 const SmallCarousel = () => {
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3
-    //   };
+  // const settings = {
+  //     dots: true,
+  //     infinite: true,
+  //     speed: 500,
+  //     slidesToShow: 3,
+  //     slidesToScroll: 3
+  //   };
 
   return (
     <>
       <div className="w-[90%] mx-auto flex items-center h-52 bg-white">
         <div className="flex items-center w-[100px] gap-2 ">
-              {/* <Slider {...settings}> */}
-            {data.map((d) => (
-              <img src={d.img} alt="" />
-            ))}
+            <FontAwesomeIcon size="2xl" icon={faCaretLeft} />
+          {/* <Slider {...settings}> */}
+          {data.map((d) => (
+            <img src={d.img} alt="" />
+          ))}
           {/* </Slider> */}
+          <FontAwesomeIcon size="2xl" icon={faCaretRight} />
         </div>
       </div>
     </>
@@ -67,9 +71,9 @@ const data = [
   {
     img: `https://f.nooncdn.com/mpcms/EN0001/assets/5980eeb4-aea7-4a6e-9810-43b135335a55.png?format=avif`,
   },
-//   {
-//     img: `https://f.nooncdn.com/mpcms/EN0002/assets/529f462b-cd24-4667-a125-61b0b2adc42f.png?format=avif`,
-//   },
+  //   {
+  //     img: `https://f.nooncdn.com/mpcms/EN0002/assets/529f462b-cd24-4667-a125-61b0b2adc42f.png?format=avif`,
+  //   },
 ];
 
 export default SmallCarousel;
