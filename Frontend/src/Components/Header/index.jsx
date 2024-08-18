@@ -34,14 +34,14 @@ const Header = () => {
           <input
             type="text"
             placeholder="What are you looking for?"
-            className="px-2 py-2 rounded-md "
+            className="px-2 py-2 rounded-md border-none"
             size={115}
             name=""
             id=""
           />
         </div>
         <div className={`flex justify-around items-center cursor-pointer ${styles.btns}`}>
-          <p lang="ar">Al-Arabi</p>
+          <p lang="ar">العربية</p>
           <div className={` ${styles.separator}`}></div>
           <p className="font-semibold">Login</p>
           <FontAwesomeIcon icon={faUser} />

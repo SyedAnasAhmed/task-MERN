@@ -6,16 +6,80 @@
   font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
-.mainNav{
-    border-bottom: 1px solid lightgray;
+.mainNav {
+  border-bottom: 1px solid lightgray;
+  background-color: rgb(255, 255, 255);
 }
 
-.firstlink{
-    width: 15%;
-    border-right: 1px solid lightgray;
+.firstlink {
+  width: 15%;
+  border-right: 1px solid lightgray;
+  font-size: 15px;
 }
 
-.links{
-    width: 70% !important;
-    /* background-color: red; */
+.links {
+  width: 80% !important;
+  font-size: 15px;
+}
+
+.noononemain {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.noonone {
+  width: 95%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid rgba(0, 81, 255, 0.968);
+}
+
+.noonone img {
+  width: 30%;
+  height: 40%;
+}
+
+.noonone p {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .links {
+    width: 60%;
+    font-size: 10px;
+    gap: 5px;
+  }
+  .firstlink {
+    font-size: 10px;
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .links {
+    display: none !important;
+  }
+  .firstlink{
+    font-size: 15px;
+    width: 50%;
+  }
+  .noononemain{
+    width: 50%;
+  }
+  .noonone{
+    margin-left: 10px;
+  }
+  .noonone img{
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 426px ) {
+    .noonone img {
+        height: auto;
+    }
 }
