@@ -1,0 +1,43 @@
+.Header{
+    background-color: rgb(255, 236, 65);
+}
+
+.logos{
+    width: 15% ;
+}
+
+.btns{
+    width: 20%;
+}
+
+.separator{
+    height: 20px;
+    border-left: 1px solid rgb(150, 138, 138);
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .Header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 30vh !important;
+        justify-content: center;
+    }
+
+    .logos{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: auto !important;
+    }
+
+    .btns{
+        width: 100%;
+    }
+
+    .Header input {
+        width: 90%;
+    }
+  }
+  
