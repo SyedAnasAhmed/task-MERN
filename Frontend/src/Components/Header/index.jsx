@@ -14,7 +14,7 @@ const Header = () => {
         className={`w-full h-[65px] ${styles.Header}  flex justify-around`}
       >
         <div
-          className={`flex h-full justify-around items-center ${styles.logos}`}
+          className={`flex h-full justify-around cursor-pointer items-center ${styles.logos}`}
         >
           <img
             src="https://f.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-en.svg"
@@ -40,7 +40,7 @@ const Header = () => {
             id=""
           />
         </div>
-        <div className={`flex justify-around items-center ${styles.btns}`}>
+        <div className={`flex justify-around items-center cursor-pointer ${styles.btns}`}>
           <p lang="ar">Al-Arabi</p>
           <div className={` ${styles.separator}`}></div>
           <p className="font-semibold">Login</p>
