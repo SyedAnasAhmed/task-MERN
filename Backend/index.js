@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import router from "./Routes/ProductRoutes.js";
-import {v2 as cloudinary} from "cloudinary";
+import  cloudinary from "cloudinary";
 
 const app = express();
 const PORT = 3000;
@@ -12,10 +12,10 @@ dotenv.config();
 
 app.use("/api/products", router);
 
-cloudinary.config({
- cloud_name : process.env.CLOUD_NAME,
-  api_key :  process.env.API_KEY,
-  api_secret : process.env.API_SECRET
+cloudinary.v2.config({
+ cloud_name : "dtmu13mzr",
+  api_key :  666723765695526 ,
+  api_secret : "shv9StJ-38-DKQU1FThalZIrscM"
 });
 
 

@@ -4,3 +4,9 @@ body{
     box-sizing: border-box;
     background-color: rgb(240, 240, 240);
 }
+
+@media only screen and (max-width: 769px) {
+    .righthero{
+        display: none !important;
+    }
+  }

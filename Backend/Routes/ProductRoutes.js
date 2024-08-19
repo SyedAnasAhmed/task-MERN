@@ -4,7 +4,7 @@ import { upload } from "../Middleware/MulterConfig.js";
 
 const router = Router();
 
-router.post("/create" , upload.single('image'), createProducts)
+router.post("/create" , upload.single('imageURL'), createProducts)
 router.get("/" , getProducts)
 
 export default router;
