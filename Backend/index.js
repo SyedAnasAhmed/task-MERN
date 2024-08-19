@@ -22,7 +22,7 @@ cloudinary.v2.config({
 
 
 mongoose
-.connect(process.env.MONGO_URI)
+.connect("mongodb+srv://Anas:1234@atlascluster.jetgdoj.mongodb.net/")
 .then(() => {
   console.log("Successfully connected to mongodb");
   app.listen(PORT, () => {
