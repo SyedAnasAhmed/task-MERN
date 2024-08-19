@@ -1,4 +1,6 @@
 import "./App.css";
+import ProductCard from "./Components/Card";
+// import CardCarousel from "./Components/CardCarousel";
 import { HeroCarousel } from "./Components/Carousel";
 import Header from "./Components/Header";
 import Hero2 from "./Components/Hero2Section";
@@ -31,6 +33,9 @@ function App() {
       <div className="mt-5 ml-24">
         <h1 className="font-bold text-2xl" >Recommended for you</h1>
       </div>
+
+      <ProductCard />
+      {/* <CardCarousel /> */}
     </>
   );
 }

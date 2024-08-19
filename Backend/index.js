@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import router from "./Routes/ProductRoutes.js";
 import  cloudinary from "cloudinary";
+import cors from "cors";
 
 const app = express();
 const PORT = 3000;
@@ -10,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 dotenv.config();
 
+app.use(cors())
 app.use("/api/products", router);
 
 cloudinary.v2.config({
