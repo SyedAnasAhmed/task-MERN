@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 import router from "./Routes/ProductRoutes.js";
 import  cloudinary from "cloudinary";
 import cors from "cors";
