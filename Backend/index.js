@@ -1,12 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
-import dotenv from "dotenv";
 import router from "./Routes/ProductRoutes.js";
 import  cloudinary from "cloudinary";
 import cors from "cors";
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 dotenv.config();
