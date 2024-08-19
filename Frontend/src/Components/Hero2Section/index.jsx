@@ -1,10 +1,11 @@
 import React from "react";
+import styles from './styles.module.css'
 
 const Hero2 = () => {
   return (
     <>
-      <div className="w-[95%] h-[80%] flex mx-auto justify-center gap-5 mt-3">
-        <div className="w-[30%] h-[100%]  flex flex-col gap-3 py-3  justify-center  bg-white ">
+      <div className={`w-[95%] h-[80%] flex mx-auto justify-center gap-5 ${styles.maindiv} mt-3`}>
+        <div className={`w-[30%] h-[100%]  flex flex-col gap-3 py-3  justify-center  bg-white ${styles.div1} `}>
           <div className="px-2">
             <h1 className="font-bold text-xl">More reasons to shop</h1>
           </div>
@@ -36,7 +37,7 @@ const Hero2 = () => {
           </div>
         </div>
 
-        <div className="w-[30%] h-[100%]  flex flex-col gap-3 py-3  justify-center  bg-white ">
+        <div className={`w-[30%] h-[100%]  flex flex-col gap-3 py-3  justify-center ${styles.div1}  bg-white `}>
           <div className="px-2">
             <h1 className="font-bold text-xl">Mega deals</h1>
           </div>
@@ -67,7 +68,7 @@ const Hero2 = () => {
             />
           </div>
         </div>
-        <div className="w-[30%] h-[100%]  flex flex-col gap-3 py-3  justify-center  bg-white ">
+        <div className={`w-[30%] h-[100%]  flex flex-col gap-3 py-3  justify-center ${styles.div1}  bg-white `}>
           <div className="px-3">
             <h1 className="font-bold text-xl">In focus</h1>
           </div>

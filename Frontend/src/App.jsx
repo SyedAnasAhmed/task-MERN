@@ -12,11 +12,12 @@ function App() {
     <>
       <Header />
       <Navbar />
-      <div class="h-56 mx-auto flex justify-center ">
-        <div className="w-[61%]">
+
+      <div class="h-56 mx-auto flex justify-center customclass  ">
+        <div className="w-[61%] carouseldiv">
           <HeroCarousel />
         </div>
-        <div className="flex   ">
+        <div className="flex rightimgs  ">
           <img
             src="https://f.nooncdn.com/mpcms/EN0001/assets/2cfab4db-f253-4160-b0ea-ed441c31ef30.png?format=avif"
             alt=""
@@ -29,9 +30,11 @@ function App() {
       </div>
 
       <SmallCarousel />
+
       <Hero2 />
-      <div className="mt-5 ml-24">
-        <h1 className="font-bold text-2xl" >Recommended for you</h1>
+
+      <div className="mt-5 customtext ml-24">
+        <h1 className="font-bold text-2xl">Recommended for you</h1>
       </div>
 
       <ProductCard />

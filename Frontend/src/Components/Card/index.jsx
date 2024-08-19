@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaStar, FaHeart, FaShoppingCart, FaCheckCircle } from "react-icons/fa"; // Importing icons from react-icons
 import axios from "axios";
-import Slider from "react-slick";
+import styles from './styles.module.css'
 
 const ProductCard = () => {
   const [products, setProducts] = useState([]);
@@ -19,9 +19,9 @@ const ProductCard = () => {
   }, []);
 
   return (
-    <div className="w-[92%] flex flex-wrap justify-evenly items-center mx-auto">
+    <div className={`w-[92%] flex flex-wrap justify-evenly ${styles.maindiv} gap-3 items-center mx-auto`}>
       {products.map((product) => (
-        <div className="border rounded-lg shadow-sm p-4 w-56 bg-white">
+        <div className={`border rounded-lg shadow-sm p-4 ${styles.innerdiv} w-56 bg-white`}>
           <div className="flex justify-between items-center mb-2">
             <span className="bg-black text-white text-xs font-bold px-2 py-1 rounded-xl">
               Best Seller

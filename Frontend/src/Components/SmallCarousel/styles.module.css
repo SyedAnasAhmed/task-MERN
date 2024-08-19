@@ -1,0 +1,27 @@
+@media only screen and (max-width: 769px) {
+  .carouselmaindiv {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .carouselmaindiv div {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .carouselmaindiv {
+    margin-top: 10px;
+  }
+  .carouselmaindiv div {
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+    .carouselmaindiv div{
+        width: 13px;
+    }
+  }

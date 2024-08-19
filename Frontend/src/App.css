@@ -1,12 +1,37 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: rgb(240, 240, 240);
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(240, 240, 240);
 }
 
 @media only screen and (max-width: 769px) {
-    .righthero{
-        display: none !important;
-    }
+  .customclass {
+    /* /* flex-direction: column;  */
+    width: auto !important;
+    height: auto !important;
   }
+  .rightimgs {
+    width: 50% !important;
+    margin: auto;
+    height: 100px !important ;
+    justify-content: center !important;
+  }
+  .rightimgs img {
+    width: 100%;
+  }
+  .carouseldiv {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .rightimgs {
+    width: 80% !important;
+    height: 100px;
+  }
+  .customtext {
+    margin: 20px !important;
+  }
+}

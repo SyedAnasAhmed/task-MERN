@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import styles from "./styles.module.css"
 
 const SmallCarousel = () => {
   // const settings = {
@@ -16,7 +17,7 @@ const SmallCarousel = () => {
 
   return (
     <>
-      <div className="w-[90%] mx-auto flex items-center h-52 bg-white">
+      <div className={`w-[90%] mx-auto flex items-center h-52 bg-white ${styles.carouselmaindiv} `}>
         <div className="flex items-center w-[100px] gap-2 ">
             <FontAwesomeIcon size="2xl" icon={faCaretLeft} />
           {/* <Slider {...settings}> */}
