@@ -8,7 +8,7 @@ const ProductCard = () => {
 
   useEffect(() => {
     axios
-      .get("http://13.61.34.228:3001/api/products/")
+      .get("https://anastest.resoftel.com/api/products/")
       .then((response) => {
         console.log(response.data);
         setProducts(response.data);
